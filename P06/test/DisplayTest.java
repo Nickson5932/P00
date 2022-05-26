@@ -6,7 +6,7 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-public class HelloWorldTest {
+public class DisplayTest {
 
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
@@ -25,8 +25,10 @@ public class HelloWorldTest {
 	}
 
 	@Test
-	public void test() {
-		
+	public void testDisplay() {
+		System.out.println("This is the testcase for display");
+		String str1 = "Software Development Process";
+		assertNull(str1);
 		// fail("Not yet implemented");
 	}
 

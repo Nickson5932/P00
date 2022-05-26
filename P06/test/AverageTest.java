@@ -6,7 +6,7 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-public class HelloWorldTest {
+public class AverageTest {
 
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
@@ -25,9 +25,23 @@ public class HelloWorldTest {
 	}
 
 	@Test
-	public void test() {
+	public void testAverage() {
 		
-		// fail("Not yet implemented");
+		int a = 4;
+		int b = 1;
+		int c = 3;
+		int d = 2;
+		int e = 5;
+		
+		// Act
+		Average cal = new Average();
+		int actual = cal.avg(a, b, c, d, e); 
+		
+		// Assert
+		int expected = 3;
+		assertEquals(expected, actual);
+		
+		//fail("Not yet implemented");
 	}
 
 }
